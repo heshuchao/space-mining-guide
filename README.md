@@ -20,7 +20,7 @@ sudo apt-get install libdb++-dev
 apt-get install libczmq-dev
 ```
 
-## 快速启动节点
+## 快速启动节点(第二、三步)
 1. 将install-node.sh和mvc.conf置于同一个文件夹
 2. 修改mvc.conf中的addnode、rpcuser和rpcpasswd等参数
 3. chmod 777 ./install-node.sh
