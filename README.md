@@ -20,6 +20,12 @@ sudo apt-get install libdb++-dev
 apt-get install libczmq-dev
 ```
 
+## 快速启动节点
+1. 将install-node.sh和mvc.conf置于同一个文件夹
+2. 修改mvc.conf中的addnode、rpcuser和rpcpasswd等参数
+3. chmod 777 ./install-node.sh
+4. ./install-node.sh -t -latest
+
 ## 第二步: 下载节点客户端、挖矿程序和节点配置文件
 
 
@@ -34,7 +40,7 @@ apt-get install libczmq-dev
 [cpuminer](https://github.com/Brochao/space-mining-guide/releases/download/v0.1.0.0/cpuminer.tar.gz)
 
 ### 配置文件
-[mvc.conf]()
+[mvc.conf](https://github.com/Brochao/space-mining-guide/blob/main/mvc.conf)
 
 
 
