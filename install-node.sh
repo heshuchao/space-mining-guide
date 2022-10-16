@@ -150,30 +150,35 @@ main(){
      ensure mkdir -p "$_node_install_dir"
      ensure mkdir -p "$_node_data_dir"
 
-    local temp_path=temp-01 #$(date +%s%N)
-    # mkdir $temp_path
+    local temp_path=temp-$(date +%s%N)
+    mkdir $temp_path
     cd $temp_path
-    # echo "downloading node file..."
-    # echo 
-    # wget -q --show-progress ${_url}/v${_version}/${_node_file} 
-    # if [ $? != 0 ];
-    # then
-    #     err "node downloading" "failed"
-    # fi
+    echo "downloading node file..."
+    echo 
+    wget -q --show-progress ${_url}/v${_version}/${_node_file} 
+    if [ $? != 0 ];
+    then
+        err "node downloading" "failed"
+    fi
 
-    # echo "downloading mining file..."
-    # echo 
-    # wget -q --show-progress ${_url}/v${_version}/${_miner_file} 
-    #     if [ $? != 0 ];
-    # then
-    #     err "miner downloading" "failed"
-    # fi
+    echo "downloading mining file..."
+    echo 
+    wget -q --show-progress ${_url}/v${_version}/${_miner_file} 
+        if [ $? != 0 ];
+    then
+        err "miner downloading" "failed"
+    fi
 
    tar zxvf mvc.tar.gz -C $_node_install_dir
    tar zxvf cpuminer.tar.gz -C $_node_install_dir
 
+   cd ..
+   rm -rf $temp_path
+
+
 
    $_node_install_dir/bin/mvcd -conf=$_node_install_dir/mvc.conf -data_dir=$_node_data_dir
+
 }
 
 main "$@" || exit 1
