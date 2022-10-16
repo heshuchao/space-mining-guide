@@ -21,7 +21,7 @@ apt-get install libczmq-dev
 ```
 
 ## 快速启动节点(第二、三步)
-1. 将install-node.sh和mvc.conf置于同一个文件夹
+1. 将[install-node.sh](https://github.com/Brochao/space-mining-guide/blob/main/install-node.sh)和[mvc.conf](https://github.com/Brochao/space-mining-guide/blob/main/mvc.conf)置于同一个文件夹
 2. 修改mvc.conf中的addnode、rpcuser和rpcpasswd等参数
 3. chmod 777 ./install-node.sh
 4. ./install-node.sh -t -latest
