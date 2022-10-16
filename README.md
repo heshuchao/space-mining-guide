@@ -20,7 +20,7 @@ sudo apt-get install libdb++-dev
 apt-get install libczmq-dev
 ```
 
-## 快速启动节点(第二、三步)
+## 快速启动节点(快速启动可跳过第二、三步)
 1. 将[install-node.sh](https://github.com/Brochao/space-mining-guide/blob/main/install-node.sh)和[mvc.conf](https://github.com/Brochao/space-mining-guide/blob/main/mvc.conf)置于同一个文件夹
 2. 修改mvc.conf中的addnode、rpcuser和rpcpasswd等参数
 3. chmod 777 ./install-node.sh
