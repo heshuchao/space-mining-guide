@@ -1,4 +1,5 @@
 # SPACE 挖矿指引
+ ## 中文 / [english](https://github.com/Brochao/space-mining-guide/blob/main/README-en.md)
 
 ## 系统环境
 Ubuntu 20.04 LTS
