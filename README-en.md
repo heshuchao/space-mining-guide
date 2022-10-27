@@ -33,9 +33,9 @@ apt-get install libczmq-dev
 
 ### node
 
-latest version: [v0.1.0.0](https://github.com/Brochao/space-mining-guide/releases/download/v0.1.0.0/mvc.tar.gz)
+`latest version`: [v0.1.0.0](https://github.com/Brochao/space-mining-guide/releases/download/v0.1.0.0/mvc.tar.gz)
 
-history version: none
+`history version`: none
 
 ### mining program
 
