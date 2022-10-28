@@ -19,7 +19,7 @@ sudo apt-get install libdb-dev
 sudo apt-get install libdb++-dev
 ```
 ```
-apt-get install libczmq-dev
+sudo apt-get install libczmq-dev
 ```
 
 ## Run MVC node directly(skip step 2 and step 3)
