@@ -2,15 +2,19 @@
 _url=https://github.com/Brochao/space-mining-guide/releases/download
 _latest_url=$(sed 's:download:latest:g;s:github.com/:api.github.com/repos/:g'<<<$_url)
 _net_choose=
-need_cmd jq
-_api_latest_version=$(curl -s ${_latest_url} | jq -r .tag_name )
-_latest_version=${_api_latest_version//v/}
-#_latest_version=0.1.0.0
+_latest_version=0.1.0.0
+if [[ ! $(command -v jq > /dev/null 2>&1) || ! $(command -v curl > /dev/null 2>&1) ]]; then
+    _api_latest_version=$(curl -s ${_latest_url} | jq -r .tag_name )
+    if [[ $_api_latest_version != null ]]; then
+      _latest_version=${_api_latest_version//v/}
+    fi
+fi
 _version=
 _node_file=mvc.tar.gz
 _miner_file=cpuminer.tar.gz
 _node_install_dir=
 _node_data_dir=
+
 
 # check_file_exit(){
 
