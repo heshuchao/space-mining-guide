@@ -1,7 +1,11 @@
 #!/bin/bash
 _url=https://github.com/Brochao/space-mining-guide/releases/download
+_latest_url=$(sed 's:download:latest:g;s:github.com/:api.github.com/repos/:g'<<<$_url)
 _net_choose=
-_latest_version=0.1.0.0
+need_cmd jq
+_api_latest_version=$(curl -s ${_latest_url} | jq -r .tag_name )
+_latest_version=${_api_latest_version//v/}
+#_latest_version=0.1.0.0
 _version=
 _node_file=mvc.tar.gz
 _miner_file=cpuminer.tar.gz
