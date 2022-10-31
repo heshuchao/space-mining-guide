@@ -18,7 +18,7 @@ sudo apt-get install libdb-dev
 sudo apt-get install libdb++-dev
 ```
 ```
-apt-get install libczmq-dev
+sudo apt-get install libczmq-dev
 ```
 
 ## 快速启动节点(快速启动可跳过第二、三步)
