@@ -65,7 +65,7 @@ mkdir -p  /home/$USER/node_data_dir
 ```
 5. 修改配置文件中的信息
 ```
-addnode=ip:port (连接的节点)
+addnode=ip:port (连接的节点, 默认节点:node.mvc.space:29883)
 rpcuser=user (节点的rpc访问用户名)
 rpcpassword=password (节点的rpc访问密码)
 ```

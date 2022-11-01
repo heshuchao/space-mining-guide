@@ -66,7 +66,7 @@ mkdir -p  /home/$USER/node_data_dir
 ```
 5. Modify the configuration file
 ```
-addnode=ip:port (the node to connect to)
+addnode=ip:port (the node to connect to, node.mvc.space:29883 as default)
 rpcuser=user (user name for the RPC accessing)
 rpcpassword=password (password for the RPC accessing)
 ```
