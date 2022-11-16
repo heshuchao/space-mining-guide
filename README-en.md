@@ -42,7 +42,7 @@ sudo apt-get install libczmq-dev
 [cpuminer](https://github.com/Brochao/space-mining-guide/releases/download/v0.1.0.0/cpuminer.tar.gz)
 
 ### configuration file
-[mvc.conf](https://github.com/Brochao/space-mining-guide/blob/main/mvc.conf)
+[mvc.conf](https://github.com/heshuchao/space-mining-guide/releases/download/v0.1.0.0/mvc.conf)
 
 
 
