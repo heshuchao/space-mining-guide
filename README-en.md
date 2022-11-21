@@ -26,7 +26,7 @@ sudo apt-get install libczmq-dev
 1. Place [install-node.sh](https://github.com/Brochao/space-mining-guide/blob/main/install-node.sh) and [mvc.conf](https://github.com/Brochao/space-mining-guide/blob/main/mvc.conf)in the same folder($NODE_DIR)
 2. Modify `addnode`、`rpcuser` and `rpcpasswd` in mvc.conf
 3. chmod 777 ./install-node.sh
-4. ./install-node.sh -t -latest
+4. ./install-node.sh -t --latest
 
 ## Step 2: Download the node binary, mining program, and node configuration file
 
